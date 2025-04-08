@@ -23,7 +23,18 @@ Setup additional templates by adding directories + `route.ts` files under `app/i
 
 ```
 app/img/other/route.ts ->  http://localhost:3000/api/img/other
-
 ```
 
 [Next Project Structure docs](https://nextjs.org/docs/app/getting-started/project-structure)
+
+
+## Caching
+
+By default images will be served with a `Cache-Control: public, immutable,
+no-transform, max-age=31536000` so that after one request images will be served
+from the CDN. You can add another query parameter if you need to bust a cache.
+
+If you want the image content to get regenerated more often use a shorter `max-age`.
+
+For more information see the [Dynamic Mini App Embed images docs](https://miniapps.farcaster.xyz/docs/guides/sharing#dynamic-embed-images).
+

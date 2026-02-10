@@ -10,7 +10,7 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "^14"
+    "next": "^16"
   },
   "devDependencies": {
     "typescript": "^5",
